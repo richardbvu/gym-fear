@@ -3,6 +3,7 @@ import {
   faPeopleRoof,
   faPeopleGroup,
   faDumbbell,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
 function History() {
@@ -48,7 +49,7 @@ function History() {
 
           <div className='history__text'>
             <div className='history__icon'>
-              <FontAwesomeIcon icon={faPeopleRoof} />
+              <FontAwesomeIcon icon={faUsers} />
             </div>
             <h1>Our Classes</h1>
             <p>
