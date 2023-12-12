@@ -1,3 +1,4 @@
+import Download from "../components/Download";
 import Hero from "../components/Hero";
 import History from "../components/History";
 import Join from "../components/Join";
@@ -7,9 +8,9 @@ export const Home = () => {
   return (
     <div>
       <Hero />
-      {/* <Join /> */}
       <Membership />
       <History />
+      <Download />
     </div>
   );
 };
