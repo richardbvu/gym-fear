@@ -1,4 +1,10 @@
+import History from "../components/History";
+
 function About() {
-  return <div>About</div>;
+  return (
+    <div>
+      <History />
+    </div>
+  );
 }
 export default About;
