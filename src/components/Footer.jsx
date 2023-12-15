@@ -5,6 +5,7 @@ import {
   faTiktok,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -24,7 +25,6 @@ function Footer() {
             </div>
             <div className='footer__social-icon-2'></div>
             <a href='/'>
-              {/* <FontAwesomeIcon icon={faInstagram} /> */}
               <FontAwesomeIcon icon={faSquareInstagram} />
             </a>
             <div className='footer__social-icon-3'>
@@ -43,19 +43,19 @@ function Footer() {
           <div className='footer__links-title'>About Us</div>
           <ul className='footer__links-info'>
             <li>
-              <a href='/'>Gallery</a>
+              <Link to='/gallery'>Gallery</Link>
             </li>
             <li>
-              <a href='/'>Schedule</a>
+              <Link to='/schedule'>Schedule</Link>
             </li>
             <li>
-              <a href='/'>Membership</a>
+              <Link to='/pricing'>Membership</Link>
             </li>
             <li>
-              <a href='/'>Classes</a>
+              <Link to='/classes'>Classes</Link>
             </li>
             <li>
-              <a href='/'>Contact</a>
+              <Link to='/contact'>Contact</Link>
             </li>
           </ul>
         </div>
