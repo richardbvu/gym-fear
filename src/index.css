@@ -11,7 +11,8 @@
   --red-hover: rgba(255, 3, 54, 0.7);
 
   --black: #000000;
-  --black-hover: rgba(0, 0, 0, 0.85);
+  --black-light: rgba(0, 0, 0, 0.85);
+  --black-hover: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
   --white: #fff;
   --bg-color: #f8f8f8;
 }
@@ -120,73 +121,6 @@
 }
 
 /* HOME PAGE */
-/* JOIN */
-
-.join {
-  width: 100%;
-  /* background: var(--black); */
-  background: var(--bg-color);
-  /* position: absolute; */
-  /* top: 20%; */
-}
-
-.join__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.join__title {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.join__title h3 {
-  font-size: 2.5rem;
-}
-
-.join__title h1 {
-  font-size: 1rem;
-}
-
-.join__title p {
-  font-size: 3rem;
-  /* padding-bottom: 1rem; */
-}
-
-.join__title a {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--black);
-  text-decoration: none;
-  border: 3px solid var(--black);
-  border-radius: 0.3rem;
-  padding: 1rem 4rem;
-  transition: all 0.5s ease;
-  /* background: var(--red); */
-}
-
-.join__title a:hover {
-  background: var(--black);
-  color: var(--white);
-  transition: all 0.3s ease;
-  /* background: var(--red); */
-}
-
-/* HOME PAGE */
 /* MEMBERSHIP */
 
 .membership {
@@ -217,7 +151,7 @@
 }
 
 .membership__title h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
 }
 
@@ -305,7 +239,7 @@ p {
 
 #card-premium {
   /* background: var(--black); */
-  background: linear-gradient(to top left, var(--black), var(--black-hover));
+  background: linear-gradient(to top left, var(--black), var(--black-light));
   color: var(--white);
   /* border: 3px solid var(--black); */
 }
@@ -350,7 +284,7 @@ p {
 }
 
 #card-classic a:nth-child(2):hover {
-  background: var(--black-hover);
+  background: var(--black-light);
   color: var(--white);
 }
 
@@ -379,7 +313,7 @@ p {
 .history__grid {
   display: grid;
   /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 600px);
   border: 1px solid var(--black);
 }
 
@@ -389,6 +323,10 @@ p {
   justify-content: center;
   align-items: center;
   /* width: 50%; */
+}
+
+.history__text h1 {
+  font-size: 2rem;
 }
 
 .history__icon {
@@ -545,7 +483,7 @@ p {
 }
 
 .footer__social-icons a:hover {
-  color: var(--black-hover);
+  color: var(--black-light);
 }
 
 .footer__links,
@@ -584,24 +522,44 @@ p {
   /* align-items: center; */
 }
 
+/* ABOUT PAGE */
+
+.about-title {
+  padding-top: 5rem;
+  /* background-image: url(../src/images/about-title.jpg); */
+  background-size: cover;
+  background-position: top -1200px center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.about-title__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: var(--white); */
+  color: var(--black);
+  padding-bottom: 1rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 /* GALLERY PAGE */
 
 .gallery-title {
   padding-top: 5rem;
-  background-image: url(../src/images/gallery-title.jpg);
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.9;
 }
 
 .gallery-title__text {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white);
-  padding-bottom: 4rem;
+  color: var(--black);
+  padding-bottom: 1rem;
   font-weight: bolder;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 /* GALLERYPAGE1 COMPONENT*/
@@ -616,39 +574,53 @@ p {
   max-width: 1536px;
   margin-left: auto;
   margin-right: auto;
+  /* margin-bottom: 5rem; */
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
+  justify-content: center;
+  /* min-height: 100vh; */
 }
 
 .gallery__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  justify-content: center;
+}
+
+.gallery__photos {
+  width: auto;
+  height: 500px;
+  background-size: cover;
 }
 
 .gallery__photos img {
-  width: 500px;
-  height: auto;
+  width: auto;
+  height: 500px;
   background-size: cover;
+  background: var(--white);
 }
 
 .gallery__page1-numbers,
 .gallery__page2-numbers {
+  position: relative;
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
+}
+
+.gallery__page2-numbers {
+  bottom: 75px;
 }
 
 .gallery__page1-numbers div,
 .gallery__page2-numbers div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 50px;
   border: 1px solid grey;
   border-radius: 0.3rem;
   color: var(--black);
@@ -656,10 +628,15 @@ p {
 
 .gallery__page1-numbers a,
 .gallery__page2-numbers a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5rem;
   text-decoration: none;
   color: var(--black);
   font-weight: 900;
+  width: 45px;
+  height: 50px;
 }
 
 .gallery__page1-numbers div:nth-of-type(1) {
@@ -676,4 +653,281 @@ p {
 
 .gallery__page2-number:nth-of-type(2) a {
   color: var(--white);
+}
+
+/* SCHEDULE PAGE */
+
+.schedule-title {
+  padding-top: 5rem;
+  /* background-image: url(../src/images/schedule-title.jpg); */
+  background-size: cover;
+  background-position: bottom center;
+  opacity: 0.9;
+}
+
+.schedule-title__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  padding-bottom: 1rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* SCHEDULE */
+
+.calender {
+  width: 100%;
+}
+
+.calender__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.calender__days {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #616365;
+  padding: 1rem 0rem;
+}
+
+.calender__days p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.calender__days p {
+  padding-bottom: 0.1rem;
+  font-size: 1.3rem;
+}
+
+.calender__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.calender__classes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-left: 1px solid var(--black);
+  /* border-right: 1px solid var(--black); */
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  gap: 1rem;
+  line-height: 1.5;
+}
+
+.calender__classes:last-child {
+  border-right: 1px solid var(--black);
+}
+
+.calender__classes a {
+  padding: 1rem 0rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.calender__classes h5 {
+  font-weight: 700;
+}
+
+.calender__classes h4 {
+  font-size: 1.3rem;
+}
+
+.calender__classes a:hover {
+  background: #f1f1f1;
+  box-shadow: var(--black-hover);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+/* CLASSES PAGE */
+
+.classes-title {
+  padding-top: 5rem;
+  /* background-image: url(../src/images/schedule-title.jpg); */
+  background-size: cover;
+  background-position: bottom center;
+  opacity: 0.9;
+}
+
+.classes-title__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  padding-bottom: 1rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* FITNESS */
+
+.fitness {
+  width: 100%;
+}
+
+.fitness__container {
+  display: grid;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  /* background: aqua; */
+  min-height: 100vh;
+}
+
+.fitness__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* height: fit-content; */
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+.fitness__cards {
+  position: relative;
+  height: auto;
+  width: auto;
+  box-shadow: 0 0 10px 0 var(--bg-color);
+  /* border-radius: 10px solid var(--black); */
+  /* margin-top: -135px; */
+}
+
+.fitness__blur-load {
+  height: 400px;
+  width: 334px;
+  background-size: cover;
+  background-position: center;
+  /* z-index: 11; */
+}
+
+.fitness__images {
+  height: 400px;
+  width: 334px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* .fitness__blur-load {
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+}
+
+.fitness__blur-load.loaded > img {
+  opacity: 0;
+}
+
+.fitness__images img {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.fitness__images.loaded img {
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+}
+
+.fitness__photos img {
+  height: 500px;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+} */
+
+.fitness__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  /* top: 11px; */
+  /* left: 40px; */
+  /* padding-top: 280px; */
+  /* padding-left: 0px; */
+  color: var(--black);
+  /* z-index: 1; */
+  /* max-height: 100vh; */
+  background: var(--bg-color);
+  font-weight: bolder;
+  padding: 2rem;
+  border: 1px solid var(--black);
+}
+
+.fitness__text :not(.fitness__link) {
+  /* text-shadow: 3px 2px 1px var(--black); */
+}
+
+.fitness__text h1 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.fitness__bar {
+  border-top: 4px solid var(--red);
+  width: 4rem;
+  padding-bottom: 1rem;
+}
+
+.fitness__text h2 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.fitness__text-icon {
+  padding-right: 0.5rem;
+}
+
+.fitness__link {
+  /* position: relative; */
+  /* top: 20px; */
+  width: fit-content;
+  color: var(--black);
+  padding: 1rem 2.5rem;
+  background: var(--white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 0.2rem;
+  outline: 2px solid var(--black);
+  /* box-shadow: 0px 5px 5px 0px var(--black); */
+}
+
+.fitness__link:hover {
+  background: var(--black);
+  color: var(--white);
+  transition: all 0.3s ease;
+  outline: 2px solid var(--red);
+}
+
+.fitness__link-icon {
+  padding-left: 0.5rem;
+  color: var(--red);
 }
