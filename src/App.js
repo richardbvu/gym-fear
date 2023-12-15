@@ -20,16 +20,11 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='gallery' element={<Gallery />}>
-          {/* <Route index element={<GalleryPage1 />} /> */}
           <Route index element={<GalleryPage1 />} />
           <Route path='page-1' element={<GalleryPage1 />} />
           <Route path='page-2' element={<GalleryPage2 />} />
         </Route>
-        {/* <Route path='gallery/page-1' element={<GalleryPage1 />} /> */}
-        {/* <Route path='gallery/page-2' element={<GalleryPage2 />} /> */}
-
         <Route path='schedule' element={<Schedule />} />
-        <Route path='blog' element={<Blog />} />
         <Route path='pricing' element={<Pricing />} />
         <Route path='classes' element={<Classes />} />
         <Route path='contact' element={<Contact />} />
