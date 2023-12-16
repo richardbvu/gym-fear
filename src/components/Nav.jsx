@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faSquarePlus } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => {
@@ -19,8 +19,8 @@ const Nav = () => {
           <Link className='nav__link' to='about'>
             About
           </Link>
-          <Link className='nav__link' to='gallery'>
-            Gallery
+          <Link className='nav__link' to='classes'>
+            Classes
           </Link>
           <Link className='nav__link' to='schedule'>
             Schedule
@@ -28,26 +28,23 @@ const Nav = () => {
           <Link className='nav__link' to='pricing'>
             Pricing
           </Link>
-          <Link className='nav__link' to='classes'>
-            Classes
+
+          <Link className='nav__link' to='gallery'>
+            Gallery
           </Link>
           <Link className='nav__link' to='contact'>
             Contact
           </Link>
         </div>
         <div className='nav__buttons'>
-          <div>
-            <a className='nav__button nav__sign-up' href='/'>
-              <FontAwesomeIcon icon={faUserPlus} />
-              <p>My Account</p>
-            </a>
-          </div>
-          <div>
-            <a className='nav__button nav__join-class' href='/'>
-              <FontAwesomeIcon icon={faSquarePlus} />
-              <p>Join Us</p>
-            </a>
-          </div>
+          <Link className='nav__button-link' to='/contact'>
+            <FontAwesomeIcon icon={faUser} />
+            My Account
+          </Link>
+          <Link className='nav__button-link' to='/contact'>
+            <FontAwesomeIcon icon={faSquarePlus} />
+            Join Us
+          </Link>
         </div>
       </div>
     </nav>
