@@ -4,17 +4,19 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Classes from "./pages/Classes";
 import Pricing from "./pages/Pricing";
-import Blog from "./pages/Blog";
 import Schedule from "./pages/Schedule";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import GalleryPage1 from "./components/GalleryPage1";
 import GalleryPage2 from "./components/GalleryPage2";
+import ScrollToTop from "./components/ScrollToTop";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Nav />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -28,7 +30,7 @@ function App() {
         <Route path='pricing' element={<Pricing />} />
         <Route path='classes' element={<Classes />} />
         <Route path='contact' element={<Contact />} />
-        {/* <Route path='*' element={<NotFound />} /> */}
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </>
