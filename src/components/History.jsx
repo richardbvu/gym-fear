@@ -5,6 +5,14 @@ import {
   faDumbbell,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
+import history2 from "../images/history2.jpg";
+import history2small from "../images/history2-small.jpg";
+import history3 from "../images/history3.jpg";
+import history3small from "../images/history3-small.jpg";
+import history1 from "../images/history1.jpg";
+import history1small from "../images/history1-small.jpg";
+import history4 from "../images/history4.jpg";
+import history4small from "../images/history4-small.jpg";
 
 function History() {
   return (
@@ -22,8 +30,18 @@ function History() {
               fitness and nutrition plan to accomplish your goals.
             </p>
           </div>
-          <div className='history__img-1'></div>
-          <div className='history__img-2'></div>
+          <div
+            className='history__blur-load'
+            style={{ backgroundImage: `url( ${history1small} )` }}
+          >
+            <img className='history__img' src={history1} alt='' />
+          </div>
+          <div
+            className='history__blur-load'
+            style={{ backgroundImage: `url( ${history2small} )` }}
+          >
+            <img className='history__img' src={history2} alt='' />
+          </div>
           <div className='history__text'>
             <div className='history__icon'>
               <FontAwesomeIcon icon={faPeopleGroup} />
@@ -44,8 +62,18 @@ function History() {
               you deserve.
             </p>
           </div>
-          <div className='history__img-3'></div>
-          <div className='history__img-4'></div>
+          <div
+            className='history__blur-load'
+            style={{ backgroundImage: `url( ${history3small} )` }}
+          >
+            <img className='history__img' src={history3} alt='' />
+          </div>
+          <div
+            className='history__blur-load'
+            style={{ backgroundImage: `url( ${history4small} )` }}
+          >
+            <img className='history__img' src={history4} alt='' />
+          </div>
 
           <div className='history__text'>
             <div className='history__icon'>
