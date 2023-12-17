@@ -12,11 +12,15 @@ function GalleryPage2() {
           {galleryImages.map((image) => {
             return (
               <div
-                className='gallery__photos'
+                className='gallery__blur-load'
                 key={image.id}
                 style={{ backgroundImage: `url( ${image.background} )` }}
               >
-                <LazyLoadImage src={image.img} alt='Gym image' />
+                <LazyLoadImage
+                  src={image.img}
+                  alt='Gym image'
+                  className='gallery__photos'
+                />
               </div>
             );
           })}
