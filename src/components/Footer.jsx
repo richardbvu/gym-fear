@@ -18,25 +18,18 @@ function Footer() {
             and reach your goals.
           </p>
           <div className='footer__social-icons'>
-            <div className='footer__social-icon-1'>
-              <a href='/'>
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </div>
-            <div className='footer__social-icon-2'></div>
+            <a href='/'>
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
             <a href='/'>
               <FontAwesomeIcon icon={faSquareInstagram} />
             </a>
-            <div className='footer__social-icon-3'>
-              <a href='/'>
-                <FontAwesomeIcon icon={faTiktok} />
-              </a>
-            </div>
-            <div className='footer__social-icon-4'>
-              <a href='/'>
-                <FontAwesomeIcon icon={faYoutube} />
-              </a>
-            </div>
+            <a href='/'>
+              <FontAwesomeIcon icon={faTiktok} />
+            </a>
+            <a href='/'>
+              <FontAwesomeIcon icon={faYoutube} />
+            </a>
           </div>
         </div>
         <div className='footer__links'>
