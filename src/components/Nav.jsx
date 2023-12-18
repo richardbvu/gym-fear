@@ -37,7 +37,7 @@ const Nav = () => {
           </Link>
         </div>
         <div className='nav__buttons'>
-          <Link className='nav__button-link' to='/contact'>
+          <Link className='nav__button-link' to='/account'>
             <FontAwesomeIcon icon={faUser} />
             My Account
           </Link>

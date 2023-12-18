@@ -565,36 +565,17 @@ p {
   /* align-items: center; */
 }
 
-/* ABOUT PAGE */
+/* PAGE TITLE */
 
-.about-title {
+.page-title {
   padding-top: 5rem;
-  /* background-image: url(../src/images/about-title.jpg); */
   background-size: cover;
   background-position: top -1200px center;
   background-repeat: no-repeat;
   opacity: 0.9;
 }
 
-.about-title__text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* color: var(--white); */
-  color: var(--black);
-  padding-bottom: 1rem;
-  font-weight: bolder;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
-/* GALLERY PAGE */
-
-.gallery-title {
-  padding-top: 5rem;
-}
-
-.gallery-title__text {
+.page-title__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -699,27 +680,6 @@ p {
   color: var(--white);
 }
 
-/* SCHEDULE PAGE */
-
-.schedule-title {
-  padding-top: 5rem;
-  /* background-image: url(../src/images/schedule-title.jpg); */
-  background-size: cover;
-  background-position: bottom center;
-  opacity: 0.9;
-}
-
-.schedule-title__text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--black);
-  padding-bottom: 1rem;
-  font-weight: bolder;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
 /* SCHEDULE */
 
 .calender {
@@ -804,27 +764,6 @@ p {
   box-shadow: var(--black-hover);
   cursor: pointer;
   border-radius: 1rem;
-}
-
-/* CLASSES PAGE */
-
-.classes-title {
-  padding-top: 5rem;
-  /* background-image: url(../src/images/schedule-title.jpg); */
-  background-size: cover;
-  background-position: bottom center;
-  opacity: 0.9;
-}
-
-.classes-title__text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--black);
-  padding-bottom: 1rem;
-  font-weight: bolder;
-  font-size: 2rem;
-  text-transform: uppercase;
 }
 
 /* FITNESS */
@@ -973,27 +912,6 @@ p {
 .fitness__link-icon {
   padding-left: 0.5rem;
   color: var(--red);
-}
-
-/* CONTACT PAGE */
-
-.contact-title {
-  padding-top: 5rem;
-  /* background-image: url(../src/images/schedule-title.jpg); */
-  background-size: cover;
-  background-position: bottom center;
-  opacity: 0.9;
-}
-
-.contact-title__text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--black);
-  padding-bottom: 1rem;
-  font-weight: bolder;
-  font-size: 2rem;
-  text-transform: uppercase;
 }
 
 /* CONTACT-US */
