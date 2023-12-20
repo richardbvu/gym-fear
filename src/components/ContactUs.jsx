@@ -103,7 +103,7 @@ const ContactUs = () => {
                   placeholder='Enter additional information'
                 />
                 <button type='submit' className='contact-us__submit-button'>
-                  Submit
+                  <span>Submit</span>
                 </button>
               </div>
             </form>
