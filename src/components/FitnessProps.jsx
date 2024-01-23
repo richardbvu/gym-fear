@@ -1,5 +1,3 @@
-// import { galleryImg } from "./FitnessFiles";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faClock } from "@fortawesome/free-solid-svg-icons";
@@ -31,26 +29,3 @@ const FitnessProps = (props) => {
   );
 };
 export default FitnessProps;
-
-// import { galleryImg } from "./FitnessFiles";
-// import { LazyLoadImage } from "react-lazy-load-image-component";
-// import { Link } from "react-router-dom";
-
-// const FitnessProps = (props) => {
-//   const { img, id, title, name } = props;
-//   return (
-//     <div className='gallery__photos' key={id}>
-//       <LazyLoadImage
-//         style={{ width: "300px", height: "200px" }}
-//         src={img}
-//         alt='Gym image'
-//       />
-//       <h1>{id}</h1>
-//       <h1>{title}</h1>
-//       <h1>{name}</h1>
-//       <Link to='/contact'>Join</Link>
-//       {/* <a href=''>hello</a> */}
-//     </div>
-//   );
-// };
-// export default FitnessProps;

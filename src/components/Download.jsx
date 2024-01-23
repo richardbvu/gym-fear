@@ -8,11 +8,6 @@ function Download() {
         <div className='download__text'>
           <h5>FREE FOR EVERYONE</h5>
           <h1>DOWNLOAD THE GYM FEAR APP</h1>
-          {/* <p>
-            The Gym FEAR app has what you need - pick the best time to visit
-            your favorite club with live crowd updates. Access digital workouts,
-            classes and more! Are you ready?
-          </p> */}
           <a href='/' className='download__link'>
             <div className='download__icon'>
               <FontAwesomeIcon icon={faArrowRightLong} />

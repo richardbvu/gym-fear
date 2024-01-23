@@ -1,18 +1,9 @@
-import Contact from "../pages/Contact";
 import { Link } from "react-router-dom";
 
 const Calender = () => {
   return (
     <div className='calender'>
       <div className='calender__container'>
-        {/* <div className='calender__days'>
-          <p>Mon</p>
-          <p>Wed</p>
-          <p>Thu</p>
-          <p>Fri</p>
-          <p>Sat</p>
-          <p>Sun</p>
-        </div> */}
         <div className='calender__grid'>
           <div className='calender__classes'>
             <h2>Mon</h2>
