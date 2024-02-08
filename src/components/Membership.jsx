@@ -3,7 +3,6 @@ function Membership() {
     <div className='membership'>
       <div className='membership__container'>
         <div className='membership__title'>
-          <p>hello</p>
           <h2>MEMBERSHIPS</h2>
           <p>
             We offer the Fear Premium Card Membership and Fear Classic
