@@ -48,6 +48,9 @@ const Nav = () => {
           <Link className='nav__link' to='gallery' onClick={noShowNavBar}>
             Gallery
           </Link>
+          <Link className='nav__link' to='goals' onClick={noShowNavBar}>
+            Goals
+          </Link>
           <Link className='nav__link' to='contact' onClick={noShowNavBar}>
             Contact
           </Link>

@@ -13,6 +13,7 @@ import GalleryPage2 from "./components/GalleryPage2";
 import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./components/NotFound";
 import MyAccount from "./pages/MyAccount";
+import Goals from "./pages/Goals";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='schedule' element={<Schedule />} />
         <Route path='pricing' element={<Pricing />} />
         <Route path='classes' element={<Classes />} />
+        <Route path='goals' element={<Goals />} />
         <Route path='contact' element={<Contact />} />
         <Route path='account' element={<MyAccount />} />
         <Route path='*' element={<NotFound />} />
