@@ -19,16 +19,16 @@ function Footer() {
               fear and reach your goals.
             </p>
             <div className='footer__social-icons'>
-              <a href='/'>
+              <a href='/' aria-label='Enter GYM FEAR twitter'>
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-              <a href='/'>
+              <a href='/' aria-label='Enter GYM FEAR instagram'>
                 <FontAwesomeIcon icon={faSquareInstagram} />
               </a>
-              <a href='/'>
+              <a href='/' aria-label='Enter GYM FEAR tiktok'>
                 <FontAwesomeIcon icon={faTiktok} />
               </a>
-              <a href='/'>
+              <a href='/' aria-label='Enter GYM FEAR youtube'>
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
             </div>

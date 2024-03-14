@@ -469,6 +469,9 @@
   .membership__container {
     max-width: 475px;
   }
+  .hero {
+    display: none;
+  }
 }
 
 /* xs */
