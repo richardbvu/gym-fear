@@ -8,7 +8,7 @@ Live Demo : Here
 
 <h3 align="center">Home Page</h3>
 
-![Screenshot of Home Page](https://github.com/richardvu93/gym-fear/blob/main/src/images/screenshot.jpg)
+![Screenshot of Home Page](https://github.com/richardvu93/gym-fear/blob/main/src/images/screenshot-gym.png)
 
 
 # How It's Made
