@@ -13,14 +13,14 @@ function Membership() {
         <div className='membership__cards'>
           <div className='membership__card'>
             <div className='membership__card-info' id='card-premium'>
-              <h2>
+              <h1>
                 FEAR Premium <span>Best Value</span>
-              </h2>
-              <h1>Starting at</h1>
+              </h1>
+              <h2>Starting at</h2>
               <h3>
                 <span>$24.99</span> /mo
               </h3>
-              <h1>Plus taxes and fees</h1>
+              <h4>Plus taxes and fees</h4>
               <p>
                 Access to any club, bring a guest. Premium digital workouts and
                 much more!
@@ -33,12 +33,12 @@ function Membership() {
           </div>
           <div className='membership__card'>
             <div className='membership__card-info' id='card-classic'>
-              <h2>FEAR Classic</h2>
-              <h1>Starting at</h1>
+              <h1>FEAR Classic</h1>
+              <h2>Starting at</h2>
               <h3>
                 <span>$10</span> /mo
               </h3>
-              <h1>Plus taxes and fees</h1>
+              <h4>Plus taxes and fees</h4>
               <p>Our standard membership with unlimited access.</p>
               <div className='membership__card-links'>
                 <a href='/'>Learn More</a>

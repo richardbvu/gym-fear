@@ -7,7 +7,7 @@ function Download() {
       <div className='download__container'>
         <div className='download__text'>
           <h1>FREE FOR EVERYONE</h1>
-          <h5>DOWNLOAD THE GYM FEAR APP</h5>
+          <p>DOWNLOAD THE GYM FEAR APP</p>
           <a href='/' className='download__link'>
             <div className='download__icon'>
               <FontAwesomeIcon icon={faArrowRightLong} />
