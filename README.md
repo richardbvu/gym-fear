@@ -2,7 +2,7 @@
 
 A gym website that provides a comprehensive resource for membership options, fitness classes, class scheduling, and a gallery.
 
-Live Demo : [Live Demo](https://car-rent-all.vercel.app/)
+Live Demo : [Live Demo](https://gym-fear-zeta.vercel.app/))
 
 # Screenshot of the Project 
 
