@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const baseUrl = "http://localhost:5000";
-const baseUrl = "https://gym-fear-backend.vercel.app/";
+const baseUrl = "https://gym-fear-backend.onrender.com";
 
 const getAllToDo = (setToDo) => {
   axios.get(baseUrl).then(({ data }) => {
