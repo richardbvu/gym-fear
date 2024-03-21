@@ -13,9 +13,12 @@ function TrackerApp() {
   const [text, setText] = useState("");
   const [isUpdating, setIsUpdating] = useState(false);
   const [toDoId, setToDoId] = useState();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(false);
     getAllToDo(setToDo);
+    setLoading(true);
   }, []);
 
   const updateItem = (_id, text) => {
@@ -59,7 +62,7 @@ function TrackerApp() {
           </button>
         </form>
       </div>
-      <div className='tracker__list'>
+      {/* <div className='tracker__list'>
         {toDo.map((item) => (
           <TrackerList
             key={item._id}
@@ -68,7 +71,21 @@ function TrackerApp() {
             deleteItem={() => deleteToDo(item._id, setToDo)}
           />
         ))}
-      </div>
+      </div> */}
+      {!loading ? (
+        <div className='tracker__list'>
+          {toDo.map((item) => (
+            <TrackerList
+              key={item._id}
+              text={item.text}
+              updateItem={() => updateItem(item._id, item.text)}
+              deleteItem={() => deleteToDo(item._id, setToDo)}
+            />
+          ))}
+        </div>
+      ) : (
+        <h1 className='tracker__load'>Loading...</h1>
+      )}
     </div>
   );
 }
