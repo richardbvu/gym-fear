@@ -16,6 +16,10 @@
   --bg-color: #f8f8f8;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* NAV */
 
 .nav {
@@ -170,8 +174,9 @@
     width: 100%;
     transition: all 0.2s linear;
     gap: none;
-    padding: none;
+    padding: 0rem 0rem 1rem 0rem;
     text-align: center;
+    gap: 1rem;
   }
   .nav__link.active {
     padding: 5rem;
@@ -198,10 +203,12 @@
     align-items: center;
     background: var(--black);
     z-index: 11;
-    top: 450px;
+    top: 400px;
     left: 0%;
     width: 100%;
     transition: all 0.2s linear;
+    padding: 1rem 0rem 5rem 0rem;
+    gap: 1rem;
   }
 }
 
@@ -1507,15 +1514,8 @@
   margin-bottom: 5rem;
 }
 
-.tracker__list > {
-  margin: 1rem;
-}
-
-.tracker__load {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10rem;
+.tracker__list > * {
+  /* margin: 1rem; */
 }
 
 .tracker__input {
@@ -1526,6 +1526,13 @@
   color: var(--white);
   background: var(--black);
   padding: 1rem;
+}
+
+.tracker__load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem;
 }
 
 .list__item {

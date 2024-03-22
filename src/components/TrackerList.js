@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPenToSquare, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 function TrackerList({ text, updateItem, deleteItem }) {
   return (
@@ -16,7 +16,7 @@ function TrackerList({ text, updateItem, deleteItem }) {
         />
         <FontAwesomeIcon
           className='list__icon'
-          icon={faTrash}
+          icon={faTrashCan}
           onClick={deleteItem}
         />
       </div>
