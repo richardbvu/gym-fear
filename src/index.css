@@ -1575,7 +1575,8 @@ body {
 }
 
 .list__icon {
-  width: fit-content;
+  width: 20px;
+  height: auto;
   cursor: pointer;
 }
 
