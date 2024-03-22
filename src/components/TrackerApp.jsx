@@ -8,6 +8,8 @@ import {
   deleteToDo,
 } from "../utils/HandleApi";
 
+import axios from "axios";
+
 function TrackerApp() {
   const [toDo, setToDo] = useState([]);
   const [text, setText] = useState("");
@@ -15,10 +17,22 @@ function TrackerApp() {
   const [toDoId, setToDoId] = useState();
   const [loading, setLoading] = useState(false);
 
+  // const baseUrl = "http://localhost:5000";
+  const baseUrl = "https://gym-fear-backend.onrender.com";
+  // const baseUrl = "https://gym-fear-backend.vercel.app/";
+
+  const getAllToDo = (setToDo) => {
+    axios.get(baseUrl).then(({ data }) => {
+      console.log(`data --->`, data);
+      setToDo(data);
+      setLoading(true);
+    });
+  };
+
   useEffect(() => {
-    setLoading(false);
+    // setLoading(false);
     getAllToDo(setToDo);
-    setLoading(true);
+    // setLoading(true);
   }, []);
 
   const updateItem = (_id, text) => {
@@ -72,7 +86,7 @@ function TrackerApp() {
           />
         ))}
       </div> */}
-      {!loading ? (
+      {loading ? (
         <div className='tracker__list'>
           {toDo.map((item) => (
             <TrackerList
@@ -86,6 +100,33 @@ function TrackerApp() {
       ) : (
         <h1 className='tracker__load'>Loading...</h1>
       )}
+      {/* {loading ? (
+        <h1 className='tracker__load'>Loading...</h1>
+      ) : (
+        <div className='tracker__list'>
+          {toDo.map((item) => (
+            <TrackerList
+              key={item._id}
+              text={item.text}
+              updateItem={() => updateItem(item._id, item.text)}
+              deleteItem={() => deleteToDo(item._id, setToDo)}
+            />
+          ))}
+        </div>
+      )} */}
+      {/* {loading && (
+        <div className='tracker__list'>
+          {toDo.map((item) => (
+            <TrackerList
+              key={item._id}
+              text={item.text}
+              updateItem={() => updateItem(item._id, item.text)}
+              deleteItem={() => deleteToDo(item._id, setToDo)}
+            />
+          ))}
+        </div>
+      )}
+      {!loading && <h1 className='tracker__load'>Loading...</h1>} */}
     </div>
   );
 }
