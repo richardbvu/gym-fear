@@ -2,6 +2,7 @@ import Download from "../components/Download";
 import Hero from "../components/Hero";
 import History from "../components/History";
 import Membership from "../components/Membership";
+import TrackerAppLoad from "../components/TrackerAppLoad";
 
 export const Home = () => {
   return (
@@ -10,6 +11,7 @@ export const Home = () => {
       <Membership />
       <History />
       <Download />
+      <TrackerAppLoad />
     </div>
   );
 };
