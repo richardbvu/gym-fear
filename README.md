@@ -22,7 +22,7 @@ This project was purposely created with React to demonstrate my strong understan
 # Lessons Learned
 I've learned countless lessons that I'm proud of. Here's some lessons that I'd like to share: 
 
-* Implemented CRUD operations to create a straightforward list for monitoring your own goals.
+* Implemented CRUD operations to create a list for monitoring your own goals.
 * Established a database utilizing MongoDB, for storing, maintaining and accessing any sort of data. While my main focus was on front-end development, I also explored back-end technologies to broaden my skill set and enhance my capabilities in front-end work.
 * Learned about React Router and Links. Previously, I only created entirely new pages using html. I nested the App component inside BrowserRouter parent. I used Routes and Route to create various pages, including a multiple page gallery (using Outlet component) and 'Not Found' page and more. This lesson was unbelieveable to me. Small lessons like this made me realize my passion for Front-End Development. 
 * Created an array of objects which contain images, id's, titles, and times used for creating a fitness class page. Then I used the map function to access each object and its keys and values. Passing down props from Fitness component to FitnessProps component where I destructured the props in the body of the function.
