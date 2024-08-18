@@ -1,6 +1,6 @@
 # About the project
 
-A gym website that provides a comprehensive resource for membership options, fitness classes, class scheduling, and a gallery.
+A gym website offering detailed information on membership plans, fitness classes, class schedules, and includes a gallery.
 
 Live Demo : [Live Demo](https://gym-fear-zeta.vercel.app/)
 
